@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Utilis.listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Test.TC_004_SelectHotelTC">
+        <methods>
+          <include name="Reportgeneration"/>
+          <include name="valuesetup"/>
+          <include name="myBrowserLaunch"/>
+          <include name="myBrowserClose"/>
+          <include name="testDetails"/>
+          <include name="selectHotelExecution" invocation-numbers="1"/>
+          <include name="reportclose"/>
+        </methods>
+      </class> <!-- Test.TC_004_SelectHotelTC -->
+      <class name="Test.TC_006_BookingConfirmationtc">
+        <methods>
+          <include name="Reportgeneration"/>
+          <include name="myBrowserLaunch"/>
+          <include name="selectHotelExecution" invocation-numbers="1 2"/>
+          <include name="myBrowserClose"/>
+          <include name="testDetails"/>
+          <include name="valuesetup"/>
+          <include name="reportclose"/>
+        </methods>
+      </class> <!-- Test.TC_006_BookingConfirmationtc -->
+      <class name="Test.TC_007_BookedItenararyTC">
+        <methods>
+          <include name="Reportgeneration"/>
+          <include name="myBrowserLaunch"/>
+          <include name="myBrowserClose"/>
+          <include name="valuesetup"/>
+          <include name="selectHotelExecution" invocation-numbers="0 1 2"/>
+          <include name="testDetails"/>
+          <include name="reportclose"/>
+        </methods>
+      </class> <!-- Test.TC_007_BookedItenararyTC -->
+      <class name="Test.TC_009_Logout">
+        <methods>
+          <include name="Reportgeneration"/>
+          <include name="loginexecution" invocation-numbers="0 1"/>
+          <include name="myBrowserLaunch"/>
+          <include name="myBrowserClose"/>
+          <include name="testDetails"/>
+          <include name="reportclose"/>
+          <include name="valuesetup"/>
+        </methods>
+      </class> <!-- Test.TC_009_Logout -->
+      <class name="Test.TC_005_BookHotelTC">
+        <methods>
+          <include name="Reportgeneration"/>
+          <include name="valuesetup"/>
+          <include name="myBrowserLaunch"/>
+          <include name="myBrowserClose"/>
+          <include name="testDetails"/>
+          <include name="selectHotelExecution" invocation-numbers="1"/>
+          <include name="reportclose"/>
+        </methods>
+      </class> <!-- Test.TC_005_BookHotelTC -->
+      <class name="Test.TC_008_MenuitemsTC">
+        <methods>
+          <include name="Reportgeneration"/>
+          <include name="myBrowserLaunch"/>
+          <include name="myBrowserClose"/>
+          <include name="valuesetup"/>
+          <include name="testDetails"/>
+          <include name="loginexecution" invocation-numbers="1"/>
+          <include name="reportclose"/>
+        </methods>
+      </class> <!-- Test.TC_008_MenuitemsTC -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
